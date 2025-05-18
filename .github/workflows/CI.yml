@@ -44,7 +44,7 @@ jobs:
           github_user_name: ${{ github.repository_owner }}
           outputs: 
             github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            github-contribution-grid-snake-dark.svg?palette=github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.NICK_2025 }}
 
@@ -67,7 +67,6 @@ jobs:
         id: changes
         run: |
           git add assert/*.svg
-          git diff --quiet && echo "has_changes=false" >> $GITHUB_OUTPUT || echo "has_changes=true" >> $GITHUB_OUTPUT
 
       # 8. 提交变更
       - name: Commit and push changes
