@@ -39,7 +39,7 @@ jobs:
       # 5. Generate charts
       # Light theme snake
       - name: Generate light snake
-        uses: Platane/snk@v3
+        uses: lowlighter/metrics@latest
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: 
