@@ -17,3 +17,20 @@ jobs:
           git checkout main
           git checkout output -- / assert
           git pull origin main
+
+      # 第七步：检查文件变更
+      - name: Check Changes
+        id: check-changes
+        run: |
+          git add assert/
+          git diff --quiet || echo "has_changes=true" >> $GITHUB_OUTPUT
+
+      # 第八步：提交到main分支
+      - name: Commit to Main
+        if: steps.check-changes.outputs.has_changes == 'true'
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "🔄 Sync Output Branch Files [skip ci]"
+          branch: main
+          file_pattern: assert/*
+          force: true
