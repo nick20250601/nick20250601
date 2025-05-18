@@ -1,7 +1,8 @@
-name:end build
+name: Sync Output Files
 
 on:
-  schedule: # UTC 0:00 Beijing 8:00 (北京时间0点自动更新一次)
+  schedule:
+    # UTC 0:20 (北京时间 8:20)
     - cron: "20 0 * * *"
   workflow_dispatch:
 
@@ -9,28 +10,36 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout Code
         uses: actions/checkout@v4
+        with:
+          ref: main  # 明确检出 main 分支
 
-      - name: Merge dev into main
+      - name: Sync Files from Output Branch
         run: |
-          git checkout main
-          git checkout output -- * assert/
-          git pull origin main
+          # 从 output 分支恢复 assert/ 目录内容
+          git fetch origin output:output
+          git checkout output -- assert/
 
-      # 第七步：检查文件变更
-      - name: Check Changes
+      - name: Check for Changes
         id: check-changes
         run: |
-          git add assert/
-          git diff --quiet || echo "has_changes=true" >> $GITHUB_OUTPUT
+          # 检测是否有文件变更
+          git add -A assert/
+          if git diff-index --quiet HEAD --; then
+            echo "No changes detected."
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "Changes detected."
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
 
-      # 第八步：提交到main分支
-      - name: Commit to Main
+      - name: Commit & Push Changes
         if: steps.check-changes.outputs.has_changes == 'true'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "🔄 Sync Output Branch Files [skip ci]"
+          commit_message: "🔄 Sync Output Files [skip ci]"
           branch: main
           file_pattern: assert/*
-          force: true
+          commit_user_name: "GitHub Actions"
+          commit_user_email: "actions@github.com"
