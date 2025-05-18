@@ -39,3 +39,29 @@ jobs:
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            # Metrics generation
+      - name: Generate metrics
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.NICK_2025 }}
+          user: ${{ github.repository_owner }}
+          filename: assert/github-metrics.svg
+          plugins: stars,activity,repositories,followers,languages,traffic
+
+      # 6. Check for changes
+      - name: Check for changes
+        id: changes
+        run: |
+          git add assert/*.svg
+          git diff --quiet && echo "has_changes=false" >> $GITHUB_OUTPUT || echo "has_changes=true" >> $GITHUB_OUTPUT
+
+      # 7. Commit changes if needed
+      - name: Commit and push changes
+        if: steps.changes.outputs.has_changes == 'true'
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "📊 Auto-update metrics [skip ci]"
+          branch: main
+          file_pattern: assert/*.svg
+          force: true
+          skip_fetch: true
