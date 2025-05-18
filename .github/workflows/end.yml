@@ -15,7 +15,7 @@ jobs:
       - name: Merge dev into main
         run: |
           git checkout main
-          git checkout output -- / assert/
+          git checkout output -- * assert/
           git pull origin main
 
       # 第七步：检查文件变更
