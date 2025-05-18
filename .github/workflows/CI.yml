@@ -1,42 +1,25 @@
-name: GitHub Metrics Generation
+name: generate snake
 
 on:
+  schedule: # UTC 0:00 Beijing 8:00 (北京时间0点自动更新一次)
+    - cron: "0 0 * * *"
+  
+  # allows to manually run the job at any time
   workflow_dispatch:
-  schedule:
-    - cron: '0 0 * * *'
-
+  
+  # run on every push on the master branch
+  push:
+    branches:
+    - master
+  
 jobs:
-  generate-metrics:
+  generate:
     permissions: 
       contents: write
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 5
     
     steps:
-      # 1. Checkout code
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          ref: main
-
-      # 2. Configure Git identity
-      - name: Configure Git
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-
-      # 3. Sync latest code
-      - name: Synchronize repository
-        run: |
-          git pull --rebase origin main
-          git fetch --prune
-
-      # 4. Create output directory
-      - name: Create assert directory
-        run: mkdir -p assert
-
-      # 5. Generate charts
       # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
       - name: generate github-contribution-grid-snake.svg
         uses: Platane/snk/svg-only@v3
@@ -56,34 +39,3 @@ jobs:
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      # Metrics generation
-      - name: Generate metrics
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.NICK_2025 }}
-          user: ${{ github.repository_owner }}
-          filename: assert/github-metrics.svg
-          plugins: stars,activity,repositories,followers,languages,traffic
-
-     
-      # 6. 移动所有SVG到assert目录
-      - name: Move SVG files to assert
-        run: |
-          mv *.svg assert/
-      # 7. 检查文件变化
-      - name: Check for changes
-        id: changes
-        run: |
-          git add assert/*.svg
-
-      # 8. 提交变更
-      - name: Commit and push changes
-        if: steps.changes.outputs.has_changes == 'true'
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "📊 Auto-update metrics [skip ci]"
-          branch: main
-          file_pattern: assert/*.svg
-          force: true
-          skip_fetch: true
