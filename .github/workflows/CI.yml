@@ -1,85 +1,41 @@
-name: Generate Metrics & Sync Output
+name: generate snake
 
 on:
-  schedule:
-    - cron: "0 0 * * *"  # UTC时间0点（北京时间8点）
+  schedule: # UTC 0:00 Beijing 8:00 (北京时间0点自动更新一次)
+    - cron: "0 0 * * *"
+  
+  # allows to manually run the job at any time
   workflow_dispatch:
+  
+  # run on every push on the master branch
   push:
     branches:
-      - main  # 统一使用main分支
-
+    - master
+  
 jobs:
-  generate-and-sync:
-    permissions:
+  generate:
+    permissions: 
       contents: write
     runs-on: ubuntu-latest
-    timeout-minutes: 10
-
+    timeout-minutes: 5
+    
     steps:
-      # 第一步：检出main分支
-      - name: Checkout main
-        uses: actions/checkout@v4
-        with:
-          ref: main
-          fetch-depth: 0
-
-      # 第二步：生成贡献贪吃蛇图表
-      - name: Generate Snake Graphics
+      # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
+      - name: generate github-contribution-grid-snake.svg
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            assert/github-contribution-grid-snake.svg
-            assert/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+          
+          
+      # push the content of <build_dir> to a branch
+      # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
+      - name: push github-contribution-grid-snake.svg to the output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.NICK_2025 }}
-
-      # 第三步：生成统计指标
-      - name: Generate GitHub Metrics
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.NICK_2025 }}
-          user: ${{ github.repository_owner }}
-          filename: assert/github-metrics.svg
-          plugins: stars,activity,repositories,followers,languages,traffic
-
-      # 第四步：同步到output分支
-      - name: Deploy to Output Branch
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.NICK_2025 }}
-          publish_dir: ./assert
-          destination_dir: .
-          publish_branch: output
-
-      # 第五步：检出output分支获取最新文件
-      - name: Checkout Output Branch
-        uses: actions/checkout@v4
-        with:
-          ref: output
-          path: output-branch
-
-      # 第六步：同步文件到main工作区
-      - name: Sync Files to Main
-        run: |
-          cp -rf output-branch/* assert/
-          rm -rf output-branch
-
-      # 第七步：检查文件变更
-      - name: Check Changes
-        id: check-changes
-        run: |
-          git add assert/
-          git diff --quiet || echo "has_changes=true" >> $GITHUB_OUTPUT
-
-      # 第八步：提交到main分支
-      - name: Commit to Main
-        if: steps.check-changes.outputs.has_changes == 'true'
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "🔄 Sync Output Branch Files [skip ci]"
-          branch: main
-          file_pattern: 
-            assert/*
-            README.md
-          force: true
