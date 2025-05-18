@@ -6,6 +6,14 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  sync:
     runs-on: ubuntu-latest
-    name: generate-end build
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Merge dev into main
+        run: |
+          git checkout main
+          git checkout output -- / assert
+          git pull origin main
