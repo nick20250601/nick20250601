@@ -18,7 +18,8 @@ jobs:
       - name: Sync Files from Output Branch
         run: |
           # 从 output 分支恢复 assert/ 目录内容
-          git fetch origin output:output
+          git fetch --all
+          gitcheckout main
           git checkout output -- assert/
 
       - name: Check for Changes
