@@ -3,7 +3,7 @@
 <h1 align="center">
 <!-- 打字机效果的欢迎文字 -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?lines=Hi+!+I+am+nick20250601+and+welcome+to+my+profile+!;+I'm+a+nick20250601+from+China+.;&center=true&width=1000&height=100&size=32&font=Righteous"/>
+  <img src="https://readme-typing-svg.demolab.com/?lines=Hi+!+I+am+nick20250601+and+welcome+to+my+profile+!;+I'm+a+nick+from+China+.;&center=true&width=1000&height=100&size=32&font=Righteous"/>
 </p>
 </h1>
  <!-- for beauty 留个空行好看点 -->
