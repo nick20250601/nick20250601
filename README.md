@@ -31,12 +31,7 @@
     <img src="https://komarev.com/ghpvc/?username=AntherWorld&label=Views&color=orange&style=flat" alt="访问量统计" />&emsp;
     <!-- wakatime -->    
     <a href="https://wakatime.com/@AntherWorld"><img src="https://wakatime.com/badge/user/42d0678c-368b-448b-9a77-5d21c5b55352.svg" /></a>
-      <!-- for beauty 留个空行好看点 -->
-   <div>&nbsp;</div>
-| <a href="https://github.com/AntherWorld/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api?username=AntherWorld&show_icons=true&include_all_commits=true&theme=buefy&hide_border=true" alt="Anurag's github stats" /></a> | <a href="https://github.com/AntherWorld/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AntherWorld&layout=compact&theme=buefy&hide_border=true" /></a> |
-| ------------- | ------------- |
-      <!-- for beauty 留个空行好看点 -->
-   <div>&nbsp;</div>
+
 <!--根据贡献图制作的贪吃蛇-->
   <!-- Snake Code Contribution Map 贪吃蛇代码贡献图 -->
   <picture>
@@ -50,14 +45,11 @@
 </div>
 
 <table>
-
-
-    
 <tr><td>
 
 ### 🤺 About Me
 
-<img align="right" width="88" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/jobs.png" />
+<img align="right" width="88" src="https://cdn.jsdelivr.net/gh/AntherWorld/AntherWorld/assert/images/jobs.png" />
 
 <p>&emsp;&emsp;嗨，你好，我是小米同学。热爱编程、读书、电影，硬件。</p>
 <p>&emsp;&emsp;热爱计算机科学和 IT 互联网事业，希望能成为一名优秀的开发者。</p>
@@ -67,6 +59,33 @@
 </td></tr>
 
 <tr><td>
+### 🏢 Work Experience
+
+<img align="right" width="88" src="https://cdn.jsdelivr.net/gh/AntherWorld/AntherWorld/assert/images/whfsx.png" />
+
+- [武汉富士康](https://wh.foxconn.com/wh2019/index.php) &emsp; 📌 2018-09-04 —— 2021-05-21
+
+  - 工作岗位：PC测试工程师
+  - 工作内容：PC 硬件测试工程师
+
+<img align="right" width="88" src="https://cdn.jsdelivr.net/gh/AntherWorld/AntherWorld/assert/images/tflogo.png" />
+
+- [同方国际信息技术(苏州)有限公司](https://www.tongfangpc.com/) &emsp; 📌 2021-05-26 —— 2024-06-17
+
+  - 工作岗位：SW PM
+  - 工作内容：一些杂活
+
+<img align="right" width="88" src="https://cdn.jsdelivr.net/gh/AntherWorld/AntherWorld/assert/images" />
+
+- [深圳市图美电子有限公司](https://www.terra-master.com/) &emsp; 📌 2025-03-60 —— 至今
+
+  - 工作岗位：硬件测试工程师
+  - 工作内容：NAS硬件测试工程师
+
+</td></tr>
+
+<tr><td>
+  </table>
 **About me**
 
 - 💼 Test engineer at [Razorpay](https://github.com/AntherWorld)
@@ -79,5 +98,10 @@
 ![](asset/up_img.jpg)
 
 
-
+      <!-- for beauty 留个空行好看点 -->
+   <div>&nbsp;</div>
+| <a href="https://github.com/AntherWorld/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api?username=AntherWorld&show_icons=true&include_all_commits=true&theme=buefy&hide_border=true" alt="Anurag's github stats" /></a> | <a href="https://github.com/AntherWorld/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AntherWorld&layout=compact&theme=buefy&hide_border=true" /></a> |
+| ------------- | ------------- |
+      <!-- for beauty 留个空行好看点 -->
+   <div>&nbsp;</div>
 
