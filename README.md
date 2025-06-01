@@ -11,7 +11,7 @@
   <!-- knock code pictures 敲代码的图片 -->
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/nick20250601/nick20250601/assert/images/dev.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/nick20250601//nick20250601/assert/mages/developer.svg" height="225px" />
+    <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/nick20250601/nick20250601/assert/images/developer.svg" height="225px" />
     <img src="https://cdn.jsdelivr.net/gh/nick20250601/nick20250601/assert/images/dev.svg" />
   </picture>
 
