@@ -59,9 +59,10 @@
 </td></tr>
 
 <tr><td>
+  
 ### 🏢 Work Experience
 
-<img align="right" width="88" src="https://cdn.jsdelivr.net/gh/AntherWorld/AntherWorld/assert/images/whfsx.png" />
+<img align="right" width="88" src="https://cdn.jsdelivr.net/gh/AntherWorld/AntherWorld/assert/images/job1.png" />
 
 - [武汉富士康](https://wh.foxconn.com/wh2019/index.php) &emsp; 📌 2018-09-04 —— 2021-05-21
 
