@@ -69,14 +69,14 @@
   - 工作岗位：PC测试工程师
   - 工作内容：PC 硬件测试工程师
 
-<img align="right" width="88" src="https://cdn.jsdelivr.net/gh/AntherWorld/AntherWorld/assert/images/tflogo.png" />
+<img align="right" width="88" src="https://cdn.jsdelivr.net/gh/AntherWorld/AntherWorld/assert/images/tf-logo.png" />
 
 - [同方国际信息技术(苏州)有限公司](https://www.tongfangpc.com/) &emsp; 📌 2021-05-26 —— 2024-06-17
 
   - 工作岗位：SW PM
   - 工作内容：一些杂活
 
-<img align="right" width="88" src="https://cdn.jsdelivr.net/gh/AntherWorld/AntherWorld/assert/images" />
+<img align="right" width="88" src="https://cdn.jsdelivr.net/gh/AntherWorld/AntherWorld/assert/images/tmlogo.jpg" />
 
 - [深圳市图美电子有限公司](https://www.terra-master.com/) &emsp; 📌 2025-03-60 —— 至今
 
