@@ -86,13 +86,16 @@
 </td></tr>
 </table>
 
-<!-- ########################################## 分割 ########################################## -->
-<img width="200%" src="https://cdn.jsdelivr.net/gh/AntherWorld/AntherWorld/assert/images/hr.gif" />
 
-<div align="center">
+<div>
+
+<!-- ########################################## 分割 ########################################## -->
+<img width="200%" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/hr.gif" />
+
+<div align="center" >
 
 <!-- run 图片 -->
-<img src="https://cdn.jsdelivr.net/gh/AntherWorld/AntherWorld/assert/images/man_run.png" width="250" height="250" />
+<img src="https://cdn.jsdelivr.net/gh/AntherWorld/AntherWorld/assert/images/man_run.png" />
 
 <!-- Joke 笑话 -->
 <div>
@@ -103,6 +106,8 @@
   </picture>
 </div>
 <div>
+
+  
 <a href="https://github.com/AntherWorld/github-readme-stats" >
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=AntherWorld&show_icons=true&include_all_commits=true&theme=buefy&hide_border=true" alt="Anurag's github stats" />
   </a>
