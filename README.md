@@ -84,11 +84,29 @@
   - 工作内容：NAS硬件测试工程师
 
 </td></tr>
-
-<tr><td>
 </table>
 
-<div>&nbsp;</div>
-| <a href="https://github.com/AntherWorld/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api?username=AntherWorld&show_icons=true&include_all_commits=true&theme=buefy&hide_border=true" alt="Anurag's github stats" /></a> | <a href="https://github.com/AntherWorld/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AntherWorld&layout=compact&theme=buefy&hide_border=true" /></a> |
-<div>&nbsp;</div>
+<!-- ########################################## 分割 ########################################## -->
+<img width="200%" src="https://cdn.jsdelivr.net/gh/AntherWorld/AntherWorld/assert/images/hr.gif" />
 
+<div align="center">
+
+<!-- run 图片 -->
+<img src="https://cdn.jsdelivr.net/gh/AntherWorld/AntherWorld/assert/images/man_run.png" width="250" height="250" />
+
+<!-- Joke 笑话 -->
+<div>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://readme-jokes.vercel.app/api?hideBorder&bgColor=%23121212" />
+    <source media="(prefers-color-scheme: light)" srcset="https://readme-jokes.vercel.app/api?hideBorder&bgColor=%ffffff" />
+    <img alt="Jokes Card" src="https://readme-jokes.vercel.app/api?hideBorder&bgColor=%23121212" />
+  </picture>
+</div>
+<div>
+<a href="https://github.com/AntherWorld/github-readme-stats" >
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=AntherWorld&show_icons=true&include_all_commits=true&theme=buefy&hide_border=true" alt="Anurag's github stats" />
+  </a>
+<a href="https://github.com/AntherWorld/github-readme-stats">
+    <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AntherWorld&layout=compact&theme=buefy&hide_border=true" />
+</a>
+</div>
