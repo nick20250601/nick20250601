@@ -1,6 +1,6 @@
 <div align="center">
 <!--
-<h1 align="center">Hi 👋, I'm AntherWorld</h1>
+<h1 align="center">Hi 👋, I'm AntherWorld ,I'm a self-taught passionate  developer from China .</h1>
 <!-- 打字机效果的欢迎文字 -->
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com/?lines=Hi+!+I+am+AntherWorld+and+welcome+to+my+profile+!;+I'm+a+AntherWorld+from+China+.;&center=true&width=1000&height=100&size=32&font=Righteous"/>
@@ -15,7 +15,24 @@
     <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/coding.gif" />
   </picture>
 
-I'm a self-taught passionate  developer from China .
+
+
+  <!-- for beauty 留个空行好看点 -->
+  <div>&nbsp;</div>
+
+  <!-- profile logo 个人资料徽标 -->
+  <div>
+    <a href="https://twitter.com/sun0225SUN/"><img src="https://img.shields.io/badge/Twitter-推特-blue" /></a>&emsp;
+    <a href="https://www.youtube.com/@sun0225SUN"><img src="https://img.shields.io/badge/YouTube-油管-c32136" /></a>&emsp;
+    <a href="https://sunguoqi.com/"><img src="https://img.shields.io/badge/Website-博客-8c36db" /></a>&emsp;
+    <a href="https://wechat.guoqi.dev"><img src="https://img.shields.io/badge/WeChat-微信-07c160" /></a>&emsp;
+    <a href="https://space.bilibili.com/448488855/"><img src="https://img.shields.io/badge/Bilibili-B站-ff69b4" /></a>&emsp;
+    <!-- visitor -->
+    <img src="https://komarev.com/ghpvc/?username=sun0225SUN&label=Views&color=orange&style=flat" alt="访问量统计" />&emsp;
+    <!-- wakatime -->    
+    <a href="https://wakatime.com/@sun0225SUN"><img src="https://wakatime.com/badge/user/42d0678c-368b-448b-9a77-5d21c5b55352.svg" /></a>
+
+  </div>
 
 **About me**
 
