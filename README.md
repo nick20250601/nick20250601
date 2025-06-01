@@ -87,15 +87,9 @@
 </td></tr>
 
 <tr><td>
-  </table>
+</table>
 
-![](asset/up_img.jpg)
-
-
-      <!-- for beauty 留个空行好看点 -->
-   <div>&nbsp;</div>
+<div>&nbsp;</div>
 | <a href="https://github.com/AntherWorld/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api?username=AntherWorld&show_icons=true&include_all_commits=true&theme=buefy&hide_border=true" alt="Anurag's github stats" /></a> | <a href="https://github.com/AntherWorld/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AntherWorld&layout=compact&theme=buefy&hide_border=true" /></a> |
-| ------------- | ------------- |
-      <!-- for beauty 留个空行好看点 -->
-   <div>&nbsp;</div>
+<div>&nbsp;</div>
 
