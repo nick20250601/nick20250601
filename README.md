@@ -11,7 +11,7 @@ I'm a self-taught passionate  developer from China .
 
 **About me**
 
-- 💼 FrontEnd Engineer at [Razorpay](https://github.com/AntherWorld)
+- 💼 Test engineer at [Razorpay](https://github.com/AntherWorld)
 
 - 📈 Built github-readme-stats, verlyjs and more, **50m+** hits • **50K** stars on GitHub
 
