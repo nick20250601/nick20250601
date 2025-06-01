@@ -1,6 +1,6 @@
 <div align="center">
 <!--
-<h1 align="center">Hi 👋, I'm AntherWorld ,I'm a self-taught passionate  developer from China .</h1>
+<h1 align="center">Hi 👋, I'm AntherWorld</h1>
 <!-- 打字机效果的欢迎文字 -->
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com/?lines=Hi+!+I+am+AntherWorld+and+welcome+to+my+profile+!;+I'm+a+AntherWorld+from+China+.;&center=true&width=1000&height=100&size=32&font=Righteous"/>
