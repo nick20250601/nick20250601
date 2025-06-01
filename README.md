@@ -1,3 +1,4 @@
+<div align="center">
 <!--
 <h1 align="center">Hi 👋, I'm AntherWorld</h1>
 <!-- 打字机效果的欢迎文字 -->
@@ -5,7 +6,14 @@
   <img src="https://readme-typing-svg.demolab.com/?lines=Hi+!+I+am+AntherWorld+and+welcome+to+my+profile+!;+I'm+a+AntherWorld+from+China+.;&center=true&width=1000&height=100&size=32&font=Righteous"/>
 </p>
 
-<br />
+ <!-- for beauty 留个空行好看点 -->
+  <div>&nbsp;</div>
+  <!-- knock code pictures 敲代码的图片 -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/coding.gif" />
+    <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/developer.svg" height="225px" />
+    <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/coding.gif" />
+  </picture>
 
 I'm a self-taught passionate  developer from China .
 
@@ -26,7 +34,9 @@ I'm a self-taught passionate  developer from China .
 | ------------- | ------------- |
 <!--根据贡献图制作的贪吃蛇-->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AntherWorld/AntherWorld/dist/assert/github-contribution-grid-snake-dark.svg"output>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AntherWorld/AntherWorld/dist/assert/github-contribution-grid-snake.svg">
-  <img alt="Contribution Snake" src="https://raw.githubusercontent.com/AntherWorld/AntherWorld/output/assert/github-contribution-grid-snake.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AntherWorld/AntherWorld/assert/profile-snake-contrib/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AntherWorld/assert/profile-snake-contrib/github-contribution-grid-snake.svg" >
+  <img alt="Contribution Snake" src="https://raw.githubusercontent.com/AntherWorld/AntherWorld/assert/profile-snake-contrib/github-contribution-grid-snake-dark.svg">
 </picture>
+
+</div>
