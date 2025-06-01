@@ -34,9 +34,9 @@ I'm a self-taught passionate  developer from China .
 | ------------- | ------------- |
 <!--根据贡献图制作的贪吃蛇-->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AntherWorld/AntherWorld/assert/profile-snake-contrib/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AntherWorld/assert/profile-snake-contrib/github-contribution-grid-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AntherWorld/assert/profile-snake-contrib/github-contribution-grid-snake.svg" >
-  <img alt="Contribution Snake" src="https://raw.githubusercontent.com/AntherWorld/AntherWorld/assert/profile-snake-contrib/github-contribution-grid-snake-dark.svg">
+  <img alt="Contribution Snake" src="https://raw.githubusercontent.com/AntherWorld/assert/profile-snake-contrib/github-contribution-grid-snake-dark.svg">
 </picture>
 
 </div>
