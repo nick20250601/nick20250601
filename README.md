@@ -33,10 +33,11 @@ I'm a self-taught passionate  developer from China .
 | <a href="https://github.com/AntherWorld/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api?username=AntherWorld&show_icons=true&include_all_commits=true&theme=buefy&hide_border=true" alt="Anurag's github stats" /></a> | <a href="https://github.com/AntherWorld/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AntherWorld&layout=compact&theme=buefy&hide_border=true" /></a> |
 | ------------- | ------------- |
 <!--根据贡献图制作的贪吃蛇-->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AntherWorld/assert/profile-snake-contrib/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AntherWorld/assert/profile-snake-contrib/github-contribution-grid-snake.svg" >
-  <img alt="Contribution Snake" src="https://raw.githubusercontent.com/AntherWorld/assert/profile-snake-contrib/github-contribution-grid-snake-dark.svg">
-</picture>
+  <!-- Snake Code Contribution Map 贪吃蛇代码贡献图 -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/AntherWorld/AntherWorld/assert/profile-snake-contrib/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/AntherWorld/AntherWorld/assert/profile-snake-contrib/github-contribution-grid-snake.svg" />
+    <img alt="github-snake" src="https://cdn.jsdelivr.net/gh//AntherWorld/AntherWorld/assert/profile-snake-contrib/github-contribution-grid-snake.svg" />
+  </picture>
 
 </div>
